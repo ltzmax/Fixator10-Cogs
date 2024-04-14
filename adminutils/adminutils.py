@@ -34,7 +34,7 @@ async def check_regions(ctx):
 class AdminUtils(commands.Cog):
     """Useful commands for server administrators."""
 
-    __version__ = "3.0.0"
+    __version__ = "3.0.1-pre"
 
     # noinspection PyMissingConstructor
     def __init__(self, bot):
