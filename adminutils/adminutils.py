@@ -218,9 +218,11 @@ class AdminUtils(commands.Cog):
                 roles=roles,
                 reason=get_audit_reason(
                     ctx.author,
-                    _("Restricted to roles: {}").format(", ".join(role.name for role in roles))
-                    if roles
-                    else None,
+                    (
+                        _("Restricted to roles: {}").format(", ".join(role.name for role in roles))
+                        if roles
+                        else None
+                    ),
                 ),
             )
         except discord.HTTPException as e:
@@ -259,9 +261,11 @@ class AdminUtils(commands.Cog):
                 roles=roles,
                 reason=get_audit_reason(
                     ctx.author,
-                    _("Restricted to roles: {}").format(", ".join(role.name for role in roles))
-                    if roles
-                    else None,
+                    (
+                        _("Restricted to roles: {}").format(", ".join(role.name for role in roles))
+                        if roles
+                        else None
+                    ),
                 ),
             )
             await ctx.tick()
@@ -290,9 +294,11 @@ class AdminUtils(commands.Cog):
                 roles=roles,
                 reason=get_audit_reason(
                     ctx.author,
-                    _("Restricted to roles: ").format(", ".join(role.name for role in roles))
-                    if roles
-                    else None,
+                    (
+                        _("Restricted to roles: ").format(", ".join(role.name for role in roles))
+                        if roles
+                        else None
+                    ),
                 ),
             )
         except discord.Forbidden:
